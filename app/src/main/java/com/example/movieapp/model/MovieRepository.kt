@@ -1,4 +1,4 @@
-package com.example.movieapp
+package com.example.movieapp.model
 
 import javax.inject.Inject
 import javax.inject.Singleton

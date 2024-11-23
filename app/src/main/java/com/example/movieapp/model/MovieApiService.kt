@@ -1,4 +1,4 @@
-package com.example.movieapp
+package com.example.movieapp.model
 
 import retrofit2.Response
 import retrofit2.http.GET

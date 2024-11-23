@@ -1,4 +1,4 @@
-package com.example.movieapp
+package com.example.movieapp.model
 
 import dagger.Module
 import dagger.Provides
@@ -16,8 +16,8 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://api.themoviedb.org/3/") // Replace with your API base URL
-            .addConverterFactory(GsonConverterFactory.create()) // Use Gson or your preferred converter
+            .baseUrl("https://api.themoviedb.org/3/")
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 

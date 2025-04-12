@@ -29,6 +29,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.FloatingActionButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.MaterialTheme.colorScheme
@@ -450,8 +451,9 @@ fun MovieDetailsScreen(
                 .align(Alignment.TopStart)
                 .padding(top = 16.dp, start = 8.dp),
             shape = CircleShape,
-            containerColor = Color.DarkGray,
-            contentColor = Color.White
+            containerColor = Color.Black.copy(alpha = 0.25f), // Semi-transparent gray
+            contentColor = Color.White,
+            elevation = FloatingActionButtonDefaults.elevation(defaultElevation = 0.dp)
         ) {
             Icon(
                 imageVector = Icons.Default.ArrowBack,
